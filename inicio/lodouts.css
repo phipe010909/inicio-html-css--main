@@ -1,0 +1,125 @@
+body{
+  background-color: #0F172A;
+  margin: 10px;
+}
+
+.contenedor{
+  min-height: 100vh;
+  display: grid;
+  border-radius: 10px;
+   padding: 12px;
+  box-sizing: border-box;
+  overflow: auto;
+  text-align: center;
+  gap: 7px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 250px 250px 250px;
+  grid-template-areas: 
+    "header aside main"
+    "div article image"
+    "div footer image";
+}
+
+.contenedor header{
+  background: #1E293B;
+  border: 2px solid black;
+  border-radius: 15px;
+  grid-area: header;
+}
+
+.contenedor aside{
+  background: #020617;
+  border: 2px solid black;
+  border-radius: 15px;
+  grid-area: aside;
+}
+
+.contenedor main{
+  background: #334155;
+  border: 2px solid black;
+  border-radius: 15px;
+  grid-area: main;
+}
+ .contenedor div{
+  background: #475569;
+  border: 2px solid black;
+  border-radius: 15px;
+  grid-area: div;
+
+ }
+  .contenedor article{
+    background: #64748B;
+    border: 2px solid black;
+    border-radius: 15px;
+    grid-area: article;
+  }
+  .contenedor details{
+    background: #0EA5E9;
+    border: 2px solid black;
+    border-radius: 15px;
+    grid-area: image;
+  }
+
+ .contenedor footer{
+  background: #020617;
+  border: 2px solid black;
+  border-radius: 15px;
+  grid-area: footer;
+ }
+
+ .juanfelipe{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+ }
+
+ .cocinar{
+  width: 300px;
+  height: 300px;
+  border-radius: 30%;
+ }
+
+ .sistemas{
+  width: 260px;
+  height: 260px;
+  border-radius: 30%;
+ }
+
+.contenedor ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contenedor li::before {
+  content: '•';
+  color: #f9eaea;
+  font-size: 1.2rem;
+}
+
+h1{
+  color: #F8FAFC;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h2{
+  color:#F8FAFC;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+p{
+  color: #CBD5E1;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.sobremi{
+  font-size: 14px;
+}
+
+
+ 
+
+
+
+

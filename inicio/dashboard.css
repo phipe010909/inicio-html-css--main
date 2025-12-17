@@ -1,0 +1,182 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background: #e8f1f8;
+}
+
+.container{
+  display: grid;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main"
+    "sidebar footer";
+  grid-template-columns: 280px 1fr;
+  grid-template-rows: 50px 1fr 30px, minmax(280px, 2fr);
+  min-height: 100vh;
+}
+
+.encabezado{
+  grid-area: header;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.menu{
+  display: flex;
+  gap: 18px;
+}
+
+.icon{
+  width: 28px;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar{
+  width: 40px;
+  border-radius: 50%;
+}
+
+.sidebar{
+  grid-area: sidebar;
+  background: #071f36;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.microsoft{
+  width: 160px;
+  margin-bottom: 40px;
+  margin-top: -40px;
+  
+}
+
+.menu-lateral{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+}
+
+.menu-lateral a{
+  color: white;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.menu-lateral a:hover{
+  background: #3878e0;
+}
+
+.menu-lateral a:active{
+  background: #0051ff;
+}
+
+.menu-lateral .active{
+  background: #3fd441;
+  color: black;
+}
+
+
+.main{
+  grid-area: main;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.content{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card{
+  background: white;
+  width: 260px;
+  padding: 16px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+section a{
+  color: green;
+}
+
+.card h3{
+  background: black;
+  color: white;
+  padding: 6px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.papu{
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.usuario,
+.tareas{
+  background: white;
+  width: 360px;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.persona{
+  width: 160px;
+  margin-top: 10px;
+}
+
+.escala{
+  background: black;
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+
+.footer{
+  grid-area: footer;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  gap: 6px;
+}
+
+.footer-links a{
+  color: #2563eb;
+  text-decoration: none;
+  font-size: 13px;
+}
